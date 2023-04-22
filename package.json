@@ -1,0 +1,12 @@
+{
+  "name": "moviesapp",
+  "version": "1.0.0",
+  "description": "Very simple Web app using HTML, CSS, JavaScript, Node.js, MongoDB, created for learning purpose.",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

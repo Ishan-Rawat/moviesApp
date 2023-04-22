@@ -1,0 +1,14 @@
+These notes start from the 5th section of the tutorial: https://youtu.be/nu_pCVPKzTk
+
+We will be creating a backend API that will be used to work with movie reviews
+An API is a way for 2 or more programs to communicate with each other. 
+In our case we'll use it to send URL endpoints or inpoints(not clear) to interact with the database.
+
+Our API will create, read, update, and delete movie reviews.
+
+STEP 1: We are going to use ES6 import statements in our project and they are not supported by default in Node.js so we have to modify the package.json file.
+right after main, we are going to add type : 'module', .
+
+Now we can start working on the backend server. (Whoa, are we creating a backend server, an API, or both, or do they mean the same thing or what??)
+We are going to seperate the code of our server from the code that accesses the database.
+
