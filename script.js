@@ -41,3 +41,19 @@ function returnMovies(url){
         });
     });
 }
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();//This method cancels the event, meaning the default action specified for the event wont be taken(written from web)
+    //In the MDN example they used this method with an if condition. From my understanding here(in this code) the event gets canceled
+    //always.
+    // We may be doing this because the default action for submit when form element doesnt have action attribute(our case) is to 
+    //append the current URL with the form input. We dont want this here
+    main.innerHTML = ''; //When a new search is made this will remove the previous results
+    
+    const searchItem = search.value;
+    
+    if(searchItem){
+        returnMovies(SEARCHAPI + searchItem);
+        search.value = "";
+    }
+});
