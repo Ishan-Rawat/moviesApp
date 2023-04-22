@@ -21,12 +21,21 @@ function returnMovies(url){
         console.log(data.results);
         data.results.forEach(element => {
             const div_card = document.createElement('div');
+            div_card.setAttribute('class', 'card');
+
             const div_row = document.createElement('div');
+            div_row.setAttribute('class', 'row');
+
             const div_col = document.createElement('div');
+            div_col.setAttribute('class', 'column');
 
             const center =  document.createElement('center');
+
             const title = document.createElement('h3');
+
             const image = document.createElement('img');
+            image.setAttribute('class', 'thumbnail');
+            image.setAttribute('id', 'image');
 
             title.innerHTML = `${element.title}`;
             image.src = IMG_PATH + element.poster_path;
