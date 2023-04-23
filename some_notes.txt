@@ -12,3 +12,6 @@ right after main, we are going to add type : 'module', .
 Now we can start working on the backend server. (Whoa, are we creating a backend server, an API, or both, or do they mean the same thing or what??)
 We are going to seperate the code of our server from the code that accesses the database.
 
+First up we are going to import express and cors.
+Express: Its a web framework for node.js which we'll use to make HTTP endpoints that will be used by the web server.
+CORS: Stands for Cross Origin Resource Sharing. It allows AJAX to skip the same origin policy and access resources from remote hosts. It will basically allow us to prevent some errors from happening when we try to access our database from a different host as our server.
