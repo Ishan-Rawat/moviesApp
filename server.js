@@ -1,3 +1,5 @@
+//for notes on this part read some_notes.txt
+
 import express from "express";
 import cors from cors; 
 /* to import this stuff we need to run npm install express and npm install cors on our PC. This will then create a node_modules directory. 
